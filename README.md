@@ -20,6 +20,9 @@ i had some initial difficulties figuring out how the music component worked.  Pr
 
 i then had some difficulty getting the timing of the loop to work.  I had to do some maths to figure out how I would work the number of columns of the pods (8) and then do the mod of that in order make the sure the distance of the current beat highlighter would increment correctly.  
 
+## things i enjoyed
+
+I really liked this challenge because it reminded of my experiences coding in python in cs1, which is the type of coding I really enjoy.  Making this program was super enjoyable, especially getting to work with graphics.  
 
 ## references | citations
 all the help I had was from the cs2 website, which has detailed instructions on processing.js
