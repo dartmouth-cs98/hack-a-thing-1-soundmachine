@@ -1,45 +1,29 @@
-# electron-quick-start
+# welcome to the the sound maker!  
+## jane lee cs98 hack-a-thing 1
 
-**Clone and run for a quick way to see Electron in action.**
+## about processing
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+processing.js is a powerful javascript library and it's good for user interactivity and visualizations.  a lot of people use it for games, music, and other visual applications with lots of graphics.  
 
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
 
-A basic Electron application needs just these files:
+examples of what other people have done here: http://processingjs.org/exhibition/
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
 
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
+## what this app does
 
-## To Use
+this app is essentially a beatmaker where one can select little pods on the grid.  x-axis is the beat and the y-axis is the type of sound, as denoted by the icons.  the play button starts the beatmaker with the current selected pods.  the album covers can be selected and the song will play, in which the user can overlay his/her beats on top.  have fun!
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+## difficulties
 
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
-```
+i had some initial difficulties figuring out how the music component worked.  Processing has some cool native music imports that was confusing to play with at first, but looking through the instructions of the cs2 website helped.
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-## Resources for Learning Electron
+i then had some difficulty getting the timing of the loop to work.  I had to do some maths to figure out how I would work the number of columns of the pods (8) and then do the mod of that in order make the sure the distance of the current beat highlighter would increment correctly.  
 
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
 
-## License
+## references | citations
+all the help I had was from the cs2 website, which has detailed instructions on processing.js
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+* https://cs.dartmouth.edu/~mcasey/cs2/index.php
+* https://cs.dartmouth.edu/~mcasey/cs2/notes/sound3.php
+* https://cs.dartmouth.edu/~mcasey/cs2/notes/sound.php
